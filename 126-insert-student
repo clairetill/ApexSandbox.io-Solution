@@ -1,5 +1,5 @@
 public Id insertStudent(String name, String email) {
-    
+
         // Create a new Student record
         apxio__Student__c newStudent = new apxio__Student__c();
         newStudent.Name = name;
@@ -15,4 +15,3 @@ public Id insertStudent(String name, String email) {
             return null; // Return null if there was an error
         }
     }
-}

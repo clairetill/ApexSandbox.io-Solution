@@ -1,0 +1,20 @@
+public Id insertStudent(String name, String email) {
+
+public class StudentHandler {
+    public static Id insertStudent(String name, String email) {
+        // Create a new Student record
+        apxio__Student__c newStudent = new apxio__Student__c();
+        newStudent.Name = name;
+        newStudent.apxio__Email__c = email;
+        
+        // Insert the new Student record
+        try {
+            insert newStudent;
+            return newStudent.Id; // Return the ID of the newly created record
+        } catch (Exception e) {
+            // Handle any exceptions that may occur during insertion
+            System.debug('Error: ' + e.getMessage());
+            return null; // Return null if there was an error
+        }
+    }
+}

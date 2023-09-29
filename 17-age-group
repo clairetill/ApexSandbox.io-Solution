@@ -8,5 +8,3 @@ public String ageGroup(Integer n) {
     } else {
         return 'Adult';
     }
-    }
-}

@@ -1,0 +1,15 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    Set<List<String>> companions = new Set<List<String>>{
+        new List<String>{'lettuce', 'cucumbers'},
+        new List<String>{'lettuce', 'onions'},
+        new List<String>{'onions', 'carrots'},
+        new List<String>{'onions', 'tomatoes'}
+        };
+        
+    List<String> pair = new List<String>{plant1, plant2};
+    List<String> reversePair = new List<String>{plant2, plant1};
+        
+    return companions.contains(pair) || companions.contains(reversePair);
+    
+    }
+}

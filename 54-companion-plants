@@ -12,4 +12,3 @@ public Boolean companionPlants(String plant1, String plant2) {
     return companions.contains(pair) || companions.contains(reversePair);
     
     }
-}}

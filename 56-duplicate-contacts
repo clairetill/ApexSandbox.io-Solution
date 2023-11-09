@@ -1,0 +1,8 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+        Boolean phoneNumbersMatch = (c1.Phone != null && c1.Phone == c2.Phone);
+        Boolean emailAddressesMatch = (c1.Email != null && c1.Email == c2.Email);
+
+        return phoneNumbersMatch || emailAddressesMatch;
+    }
+
+}

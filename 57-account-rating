@@ -1,9 +1,9 @@
 public void setAccountRating(Account a) {
-    if (acc.AnnualRevenue <= 100000) {
-        acc.Rating = 'Cold';
-    } else if (acc.AnnualRevenue <= 500,000) {
-        acc.Rating = 'Warm';
+    if (a.AnnualRevenue <= 100000) {
+        a.Rating = 'Cold';
+    } else if (a.AnnualRevenue <= 500,000) {
+        a.Rating = 'Warm';
     } else {
-        acc.Rating = 'Hot';
+        a.Rating = 'Hot';
     }
 }

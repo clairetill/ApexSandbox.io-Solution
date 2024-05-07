@@ -1,5 +1,6 @@
 public Boolean isBirthday(Contact c) {
         Date today = Date.today();
+        Date birthdate = (Date) contact.get('Birthdate');
         Integer birthMonth = contact.Birthdate.month();
         Integer birthDay = contact.Birthdate.day();
         Integer currentMonth = today.month();
@@ -8,3 +9,4 @@ public Boolean isBirthday(Contact c) {
         return (birthMonth == currentMonth && birthDay == currentDay);
 
     }
+}

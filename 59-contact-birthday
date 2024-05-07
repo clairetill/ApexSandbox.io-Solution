@@ -9,4 +9,3 @@ public Boolean isBirthday(Contact c) {
         return (birthMonth == currentMonth && birthDay == currentDay);
 
     }
-}

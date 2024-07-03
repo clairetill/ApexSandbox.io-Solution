@@ -13,4 +13,3 @@ public String ageGroup(Integer n) {
             return 'Unknown';
         }
     }
-}
